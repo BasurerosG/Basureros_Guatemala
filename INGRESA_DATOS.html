@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    
+
+    <title ng-bind="MetaTags.title">Basureros de Guatemala</title>
+    
+    <meta name="keywords" content="{{MetaTags.keywords}}">
+    <meta ng-repeat="(key, value) in MetaTags.properties" property="{{key}}" content="{{value}}" >
+    <meta name="prerender-status-code" content="{{MetaTags.prerender.statusCode}}">
+    <meta name="prerender-header" ng-if="MetaTags.prerender.header" content="{{MetaTags.prerender.header}}">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+    <link href="https://basureros-guatemala.tadabase.io/assets/app/min/vendor/vendor-1586147046423.css" rel="stylesheet" type="text/css" />            <link href="https://basureros-guatemala.tadabase.io/images/app-themes/flatly/flatly.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://basureros-guatemala.tadabase.io/assets/app/min/script/script-1587995966940.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=nWIAd4fsGNJPgFuIySBNGXXj8vYRyEOognQ7RK--m0zW6y86vDcwxUNI_rdsAuSpc_cdNjuXqRiEJmtimlhhhTlg8yOkSdCp0ASHIxoMm0k" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9iYXN1cmVyb3MtZ3VhdGVtYWxhLnRhZGFiYXNlLmlvL2Jhc3VyZXJvcy1kZS1ndWF0ZW1hbGE"/></head>
+<body ng-controller="AppAppCtrl">
+    <toaster-container toaster-options="{'position-class': 'toast-top-right', 'close-button':true}"></toaster-container>
+    <div id="root-loading-icon" ng-if="rootLoadingCounter > 0"><div></div></div>
+    <div class="container-fluid" class1="container">
+        <div class="app" id="app" ui-view></div>
+    </div>
+    <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    
+    
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByjIXK2_OHN-r7sxlFcrUUMfxNIv7rSl0&libraries=places" async defer></script>
+        <script type="text/javascript" src="https://basureros-guatemala.tadabase.io/vendor/bower_components/tinymce/tinymce.min.js"></script>
+    
+    <script type="text/javascript" src="/vendor/sysend/sysend.js"></script>
+
+    
+    <script type="text/javascript" src="https://basureros-guatemala.tadabase.io/assets/app/min/vendor/vendor-1586147046423.js"></script>    <script type="text/javascript" src="https://basureros-guatemala.tadabase.io/assets/app/min/script/script-1587995966940.js"></script>    <script src="https://basureros-guatemala.tadabase.io/app/2ejlM1aro9/app-data.js"></script>    <script type="text/javascript">
+        angular.module("app").constant("CSRF_TOKEN", 'kKwy16lBgY2l8Pf437zqwMMnv4fplhWrDCUgMq8U');
+    </script>
+        
+</body>
+</html>
